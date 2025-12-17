@@ -26,3 +26,22 @@ for num in set(l):
     if count>1:
 
      print(f"{num} removed {count-1} times")
+
+
+# frozen set ---> immutable set (we cannot add or remove elements from frozen set)
+fs={1,2,3,4,5,6,7}      
+print(type(fs))
+
+fset=frozenset(fs)
+print(type(fset))  
+
+l=[ 1,2,3,4,5,6,7,1,2,3,4]
+t=("a","b","c","d","a","b","c","d")
+fs1=frozenset(l)
+fs2=frozenset(t)
+s1={1,2,3,4,5}
+print(fs1)
+print(fs2)
+fs3=frozenset(s1)
+print(fs3)
+
